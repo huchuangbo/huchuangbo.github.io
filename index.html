@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
+<META HTTP-EQUIV="expires" CONTENT="0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+<!--[if lt IE 9]>
+  <script src="http://www.8tupian.com/html5js/html5shiv.js"></script>
+  <script src="http://www.8tupian.com/html5js/respond.min.js"></script>
+<![endif]-->
+<style>
+img{
+  max-width:100%;
+}
+</style>
+<script type="text/javascript">
+  function xyRefresh()
+  {
+  	var ua = window.navigator.userAgent.toLowerCase();
+  	if(ua.match(/MicroMessenger/i) == 'micromessenger')
+  	{
+  		var str=window.location.href;
+  		if ( str.indexOf("?") != -1 )
+  		{
+  				if (str.indexOf("weixin_t") != -1)
+  				{	
+  					window.location.href = window.location.href+'_3';
+  				}
+  				else
+  				{
+  					window.location.href = window.location.href+'&weixin_t='+((new Date()).getTime());
+  				}
+  		}
+  		else
+  		{
+  			window.location.href = window.location.href+'?weixin_t='+((new Date()).getTime());
+  		}
+  	}
+  	else
+ 		{
+			window.location.reload(true);
+ 		}
+  }
+</script>
+</head>
+<body id = "body1">
+<p align="center"><img src="8357a24b200_files/下载.jpg" width="589" ></p>
+<p align="center">
+微信支付成功后，等待几秒钟，然后&nbsp;→&nbsp;
+<input type=button value=点击这里 onClick="xyRefresh()" style="width:80px;height:45px;">
+</p>
+<div style="display:none">
+<script src="https://s13.cnzz.com/z_stat.php?id=1272667929&web_id=1272667929" language="JavaScript"></script>
+</div>
+</body>
+<script type="text/javascript">
+var ua = window.navigator.userAgent.toLowerCase();
+if(ua.match(/MicroMessenger/i) == 'micromessenger')
+{
+	var ua_url = window.location.href;
+  var ua_body = document.getElementById("body1");
+  ua_body.innerHTML = "<br><br><div align = 'center'>如需浏览，请长按网址复制后使用浏览器访问<br><br>"+ua_url+"</div> ";
+}
+</script>
+</html>
